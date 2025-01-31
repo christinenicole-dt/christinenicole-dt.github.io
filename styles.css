@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FF4E88;
+    text-decoration: none;
+}
+
+header {
+    display: inline-flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 90px;
+   /* background-color: #ffccf7;/* Soft purple */
+ /*   box-shadow: 0 4px 10px rgba(214, 214, 214, 0.1); /*  Subtle shadow */
+}
+
+body{
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo
+{
+    cursor: pointer;
+    width: 100px; /* Default size */
+    max-width: 100%; /* Prevents overflow */
+    height: auto; /* Maintains aspect ratio */
+    margin-right:auto;
+}
+
+.nav_links
+{
+    list-style: none;
+}
+
+.nav_links li
+{
+    display: inline-block;
+    padding: 0px 45px;
+}
+
+.nav_links li a
+{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover
+{
+    color: #7319b4;
+}
+
+button {
+    background-color: #FFEDB3; /* Light yellow */
+    border: none;
+    border-radius: 20px;
+    color: #FF4E88; /* Dark contrast */
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #7319b4; /* Light pink hover */
+    color: #A3D8FF;
+    transform: scale(1.05);
+}
+
+.linkedIn
+{
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px 90px;
+}
+
+.card-container
+{
+    margin: 50px;
+    height: auto; /* Maintains aspect ratio */
+    position: relative;
+}
+.card
+{
+    width: 1000px; /* Default size */
+    max-width: 100%; /* Prevents overflow */
+    
+}
+
+.image-container
+{
+    margin: 50px;
+    height: auto; /* Maintains aspect ratio */
+    
+}
+
+.image
+{
+    width: 500px; /* Default size */
+    max-width: 100%; /* Prevents overflow */
+    position: absolute;
+    top: 68px;
+    right: 280px;
+
+}
+
+h1
+{
+    position: absolute;
+    font-family: "Poppins", serif;
+    font-size: 3rem;
+    font-weight:800;
+    color: #7319b4;
+    top: 210px;
+    left: 330px;
+}
+
+
+h1:hover
+{
+    color: #FFEDB3;
+    transition: all 0.3s ease;
+}
+h2
+{
+    position: absolute;
+    font-family: "Poppins", serif;
+    font-size: 8rem;
+    font-weight:800;
+    color: #7319b4;
+    top: 240px;
+    left: 400px;
+}
+h2:hover
+{
+    color: #FF4E88;
+    transition: all 0.3s ease;
+}
+h3
+{
+    position: absolute;
+    font-family: "Poppins", serif;
+    font-size: 3rem;
+    font-weight:800;
+    color: #7319b4;
+    top: 380px;
+    left: 600px;
+}
+h3:hover
+{
+    color: #4ea0da;
+    transition: all 0.3s ease;
+}
+p
+{
+    position: absolute;
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    font-weight:500;
+    color: #493D9E;
+    top: 500px;
+    left: 320px;
+}
+h4
+{
+    position: absolute;
+    justify-content: center; 
+    font-family: "Poppins", serif;
+    font-size: 3rem;
+    font-weight:600;
+    color: #7071E8;
+}
+
+.skills-section {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows: one for the heading, one for the logos */
+    justify-items: center; /* Center content horizontally in both rows */
+    text-align: center; /* Center-align text */
+    gap: 20px; /* Space between rows */
+    padding: 50px; /* Add padding around the section */
+    background-color: hsl(283, 100%, 90%);
+}
+
+.skills-section h4 {
+    margin: 10;
+    font-size: 3.5rem; /* Adjust font size */
+    color: hsl(282, 100%, 34%); /* Optional: Dark color for the heading */
+}
+
+.skill-cells {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap; /* Wrap items onto new lines on smaller screens */
+    justify-content: center; /* Center logos within the row */
+    gap: 30px; /* Space between logos */
+}
+
+.cell {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center content within each cell */
+    text-align: center;
+    gap: 10px; /* Space between the logo and text */
+    width: 100px; /* Set a consistent width for each cell */
+}
+
+.cell img {
+    width: 60px; /* Adjust the size of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.cell span {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(240, 20%, 25%);
+}
