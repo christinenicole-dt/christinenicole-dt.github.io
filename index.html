@@ -11,22 +11,45 @@
     <header>
         <img class="logo" src="images/logo.png" alt="logo">
         <nav>
+            <ul class="sidebar">
+                <li onclick= hideSidebar()><a href='#'><i class="fa-solid fa-x"></i></a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='projects.html'>Projects</a></li>
+                <li><a href='#'>Certificates</a></li>
+                <li><a href='#'>Contact Me!</a></li>
+                <li><a href="https://www.linkedin.com/in/nicole-tindoy/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span> LinkedIn</span></a></li>
+        <li><a href="https://github.com/christinenicole-dt" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span> GitHub</span></a></li>
+            </ul>
             <ul class="nav_links">
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>About</a></li>
                 <li><a href='#'>Projects</a></li>
                 <li><a href='#'>Certificates</a></li>
                 <li><a href='#'>Contact Me!</a></li>
-                <li><a href="https://www.linkedin.com/in/nicole-tindoy/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span> LinkedIn</span></a></li>
+                <li><a href='#'>Contact Me!</a></li>
+                <li ><a href="https://www.linkedin.com/in/nicole-tindoy/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span> LinkedIn</span></a></li>
         <li><a href="https://github.com/christinenicole-dt" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span> GitHub</span></a></li>
             </ul>
+            <li class="bar" onclick=showSidebar()><a href='#'><i class="fa-solid fa-bars"></i></a></li>
         </nav>
+        <script>
+            function showSidebar()
+            {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar()
+            {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
     </header>
 
-    <main>
+    <section class="main">
         <div class="container">
             <div class="card-container">
-                <img class="card" src="images/card.png" alt="Card">
+                <img class="card" src="images/card.png" alt="Card" style="width: 1100px; height: auto;">
             </div>
             <div class="image-container">
                 <img class="image" src="images/nicole.png" alt="Christine Nicole Tindoy">
@@ -38,7 +61,7 @@
                 <p>UI/UX Developer • Front-end Developer • Game Developer</p>
             </div>
         </div>
-    </main>
+    </section>
 
     <section id="skills" class="skills-section">
         <h4>Skills</h4>
@@ -56,11 +79,11 @@
                 <span>JavaScript</span>
             </div>
             <div class="cell">
-                <img src="images/java.png" alt="Java Logo">
+                <img src="images/java.png" alt="Java Logo" style="width: 54px; height: auto;">
                 <span>Java</span>
             </div>
             <div class="cell">
-                <img src="images/python.png" alt="Python Logo">
+                <img src="images/python.png" alt="Python Logo" style="width: 65px; height: 70px;">
                 <span>Python</span>
             </div>
             <div class="cell">
@@ -81,6 +104,37 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="about" class="about-section">
+        <div class="text">
+          <h5>Greetings, I'm Nicole!</h5>
+          <h6>
+            I am a senior Computer Science student at the University of Santo Tomas, specializing in Game Development. With a passion for creating digital products, I have worked on various projects focusing on UI/UX design, front-end development, and game development.
+          </h6>
+        </div>
+        <div class="cards-row">
+          <div class="card">
+            <img src="images/canva.png" alt="Canva" />
+          </div>
+          <div class="card">
+            <img src="images/figma.png" alt="Figma" />
+          </div>
+          <div class="card">
+            <img src="images/unity.png" alt="Unity 2D & 3D" />
+          </div>
+        </div>
+        <div class="cards-row">
+          <div class="card">
+            <img src="images/tableau.png" alt="Tableau" />
+          </div>
+          <div class="card">
+            <img src="images/blender.png" alt="Blender 3D" />
+          </div>
+          <div class="card">
+            <img src="images/colab.png" alt="Google Colab" />
+          </div>
+        </div>
+      </section>
+      
 </body>
 </html>
