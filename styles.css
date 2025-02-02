@@ -244,45 +244,45 @@ h6
 
 .skills-section {
     background-image: url('images/banner.png');
-    background-size: 100% auto; /* Stretches the width to 100% while maintaining height */
+    background-size: 100% auto; 
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 50px;
     display: grid;
-    grid-template-rows: auto auto; /* Two rows: one for the heading, one for the logos */
-    justify-items: center; /* Center content horizontally in both rows */
-    text-align: center; /* Center-align text */
-    gap: 20px; /* Space between rows */
-    padding: 50px; /* Add padding around the section */
+    grid-template-rows: auto auto; 
+    justify-items: center; 
+    text-align: center;
+    gap: 20px; 
+    padding: 50px; 
 }
 
 .skills-section h4 {
     text-align: center;
     margin: 5px;
-    font-size: 3.5rem; /* Adjust font size */
-    color: hsl(241, 100%, 25%); /* Optional: Dark color for the heading */
+    font-size: 3.5rem; 
+    color: hsl(241, 100%, 25%); 
 }
 
 .skill-cells {
     padding-top: 150px;
     display: flex;
-    flex-wrap: wrap; /* Wrap items onto new lines on smaller screens */
-    justify-content: center; /* Center logos within the row */
-    gap: 30px; /* Space between logos */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px;
 }
 
 .cell {
     display: flex;
-    flex-direction: column; /* Stack logo and text vertically */
-    align-items: center; /* Center content within each cell */
+    flex-direction: column; 
+    align-items: center;
     text-align: center;
-    gap: 10px; /* Space between the logo and text */
-    width: 100px; /* Set a consistent width for each cell */
+    gap: 10px; 
+    width: 100px; 
 }
 
 .cell img {
-    width: 60px; /* Adjust the size of the icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 60px; 
+    height: auto; 
 }
 
 .cell span {
@@ -296,43 +296,37 @@ h6
     background-color: #fffbdf;
     margin-top: 80px;
     display: grid;
-    grid-template-rows: auto auto auto; /* Three rows: text, first row of cards, second row of cards */
-    justify-items: center; /* Center items horizontally */
-    text-align: center; /* Center-align text */
-    gap: 20px; /* Space between rows */
+    grid-template-rows: auto auto auto; 
+    justify-items: center; 
+    text-align: center;
+    gap: 20px; 
     padding: 50px;
   }
-  
-  /* Optional: styling the text container */
+
   .text {
     grid-row: 1;
   }
-  
-  /* Each cards row will be a flex container for horizontal alignment */
+
   .cards-row {
     display: flex;
-    justify-content: center; /* Center cards horizontally */
-    gap: 50px; /* Adjust the spacing between cards as needed */
+    justify-content: center;
+    gap: 50px;
   }
   
-  /* Styling individual card */
   .card {
     display: flex;
-    flex-direction: column; /* Stack content vertically if you add text later */
+    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 10px;
-    /* Optionally, set a fixed width for each card */
     width: 250px;
   }
-  
-  /* Adjusting the card images */
+
   .card img {
-    width: 90%; /* The image will fill the card's width */
-    height: auto; /* Maintain the aspect ratio */
+    width: 90%;
+    height: auto;
   }
   
-  /* Projects Section Styles */
   #projects {
     padding: 50px;
     margin-top: 20px;
@@ -347,7 +341,6 @@ h6
     color: #ff019e;
   }
   
-  /* Thesis project section */
   .project-thesis {
     background-color: #fffbdf;
     padding: 50px;
@@ -370,7 +363,6 @@ h6
     margin-right: 50px;
   }
   
-  /* Project Info Row */
   .project-info {
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -388,7 +380,6 @@ h6
     color: #2619b4;
   }
   
-  /* Project Description Row */
   .project-description {
     text-align: center;
     padding: 10px 10px;
@@ -406,12 +397,11 @@ h6
     margin-bottom: 50px;
   }
   
-  /* Slider Row */
   .slider {
     width: 800px;
     max-width: 100vw;
     height: 500px;
-    margin: 30px auto; /* Adds spacing above and below */
+    margin: 30px auto;
     position: relative;
     overflow: hidden;
   }

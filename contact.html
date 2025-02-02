@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 
@@ -16,55 +16,50 @@
           font-family: 'Poppins', sans-serif;
         }
 
-        section {
-          padding: 30px 0;
+        /* Center content */
+        .contact-section {
           display: flex;
+          flex-direction: column;
+          align-items: center;
           justify-content: center;
-        }
-
-        .container {
-          width: 80%;
-          max-width: 900px;
-          padding: 10px;
+          padding: 50px 20px;
           text-align: center;
-          border-radius: 10px;
+        
         }
 
-        .certificates .container {
-         
-        }
-
-        .certificates h2 {
+        .contact-section h2 {
           font-size: 3rem;
           color: #7319b4;
-        }
-        
-        .pastel-green .container {
-          background-color: #b0e0a8;
+          margin-bottom: 30px;
         }
 
-        .pastel-pink .container {
-          background-color: #fdd1ff;
+        /* Contact table */
+        .contact-table {
+          width: 60%;
+          max-width: 500px;
+          border-collapse: collapse;
+          margin: auto;
         }
 
-        .pastel-yellow .container {
-          background-color: #fff9c4;
+        .contact-table td {
+          padding: 15px;
+          text-align: center;
         }
 
-        .pastel-blue .container {
-          background-color: #a2d2ff;
+        .contact-table i {
+          font-size: 24px;
+          color: #7319b4;
         }
 
-        .pastel-purple .container {
-          background-color: #d4a5ff;
+        .contact-table a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+          transition: color 0.3s;
         }
 
-        .image-row img {
-          width: 80%;
-          max-width: 600px;
-          display: block;
-          margin: 20px auto;
-          border-radius: 8px;
+        .contact-table a:hover {
+          color: #7319b4;
         }
 
     </style>
@@ -108,55 +103,27 @@
         }
     </script>
 
-    <section class="certificates">
-        <div class="container">
-            <h2>Certificates</h2>
-        </div>
-    </section>
-
-    <section class="pastel-green">
-        <div class="container">
-            <h2>Google UX Design</h2>
-            <div class="image-row">
-                <img src="images/certificates/googleux.png" alt="Google UX">
-            </div>
-        </div>
-    </section>
-
-    <section class="pastel-pink">
-        <div class="container">
-            <h2>Pillars 2024: The Assembly of Chiefs</h2>
-            <div class="image-row">
-                <img src="images/certificates/chief.png" alt="Plillars 2024">
-            </div>
-        </div>
-    </section>
-
-    <section class="pastel-yellow">
-        <div class="container">
-            <h2>Dean's List</h2>
-            <div class="image-row">
-                <img src="images/certificates/dl.png" alt="Dean's List">
-            </div>
-        </div>
-    </section>
-
-    <section class="pastel-blue">
-        <div class="container">
-            <h2>Artificial Intelligence in Healthcare</h2>
-            <div class="image-row">
-                <img src="images/certificates/ai.png" alt="Artificial Intelligence in Healthcare">
-            </div>
-        </div>
-    </section>
-
-    <section class="pastel-purple">
-        <div class="container">
-            <h2>Networks, Infrastructure, and Robotics</h2>
-            <div class="image-row">
-                <img src="images/certificates/networks.png" alt="Networks, Infrastructure, and Robotics">
-            </div>
-        </div>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <table class="contact-table">
+            <tr>
+                <td><i class="fa-brands fa-linkedin"></i></td>
+                <td><a href="https://www.linkedin.com/in/nicole-tindoy/" target="_blank">Christine Nicole Tindoy</a></td>
+            </tr>
+            <tr>
+                <td><i class="fa-brands fa-github"></i></td>
+                <td><a href="https://github.com/christinenicole-dt" target="_blank">christinenicole-dt</a></td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-envelope"></i></td>
+                <td><a href="mailto:cnicole.tindoy@gmail.com">cnicole.tindoy@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><i class="fa-brands fa-facebook"></i></td>
+                <td><a href="https://www.facebook.com/nicoletindoy24" target="_blank">Nicole Tindoy</a></td>
+            </tr>
+        </table>
     </section>
 
 </body>
