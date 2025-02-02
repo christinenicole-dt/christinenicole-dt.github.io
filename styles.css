@@ -98,7 +98,7 @@ body{
 .nav_links
 {
     list-style: none;
-    padding: 0 100px;
+    padding: 0 180px;
 }
 
 .nav_links li
@@ -349,3 +349,132 @@ h6
     height: auto; /* Maintain the aspect ratio */
   }
   
+  /* Projects Section Styles */
+#projects {
+  background-color: #fffbdf;
+  padding: 50px;
+  margin-top: 80px;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Common styling for each project row */
+.project {
+  margin-bottom: 60px;
+}
+
+/* Thesis project specific styling */
+.project.thesis .project-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.project.thesis .project-info h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #7319b4;
+}
+
+.project.thesis .duration {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Container for thesis project screenshots */
+.project-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling for the images (screenshots) */
+.project-screenshots img {
+  width: 300px; /* Adjust size as needed */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Styling for the headings in other project rows */
+.project h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #7319b4;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 1300px;
+  max-width: 100vw;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden; /* Added to clip overflowing images */
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+
+.list img {
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  color: #fd00c6;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fd00c6;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.dots li.active {
+  width: 30px;
+}
