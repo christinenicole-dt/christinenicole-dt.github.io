@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+
     let list = document.querySelector('.slider .list');
     let items = document.querySelectorAll('.slider .list .item');
     let dots = document.querySelectorAll('.slider .dots li');
@@ -42,5 +42,3 @@ document.addEventListener('DOMContentLoaded', function() {
         reloadSlider();
       });
     });
-  });
-  
