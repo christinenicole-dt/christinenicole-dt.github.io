@@ -443,8 +443,8 @@ h6
   }
   
   .buttons button {
-    background-color: #7319b4;
-    color: #fff9aa;
+    background-color: #e7c6ffb1;
+    color: #f000b4;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -456,7 +456,7 @@ h6
   }
   
   button:hover {
-    background-color: #7319b4;
+    background-color: #c779ff;
     color: #A3D8FF;
     transform: scale(1.05);
   }
@@ -474,7 +474,7 @@ h6
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #7319b4;
+    background-color: #c779ff;
     margin: 20px;
     border-radius: 20px;
     transition: 1s;

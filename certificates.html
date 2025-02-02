@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Christine Nicole Tindoy</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, sans-serif;
+        }
+        
+        /* General styling for each section */
+        section {
+          padding: 50px 20px;
+          text-align: center;
+        }
+        
+        /* Container for text within a section */
+        .section-content {
+          margin-bottom: 30px;
+        }
+        
+        /* Container for the image row */
+        .image-row img {
+          width: 80%;
+          max-width: 600px;
+          display: block;
+          margin: 0 auto;
+        }
+        
+        /* Pastel background colors */
+        .pastel-green {
+          background-color: #b0e0a8;
+        }
+        
+        .pastel-pink {
+          background-color: #ffd1dc;
+        }
+        
+        .pastel-yellow {
+          background-color: #fff9c4;
+        }
+        
+        .pastel-blue {
+          background-color: #a2d2ff;
+        }
+        
+        .pastel-purple {
+          background-color: #d4a5ff;
+        }
+
+        /* Sidebar & Navbar */
+        .sidebar {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 200px;
+          background: rgba(0, 0, 0, 0.9);
+          padding: 20px;
+        }
+
+        .sidebar li {
+          list-style: none;
+          padding: 10px 0;
+        }
+
+        .sidebar li a {
+          color: white;
+          text-decoration: none;
+        }
+
+        .bar {
+          cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">Contact Me!</a></li>
+                <li><a href="https://www.linkedin.com/in/nicole-tindoy/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/christinenicole-dt" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            </ul>
+
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">Contact Me!</a></li>
+                <li><a href="https://www.linkedin.com/in/nicole-tindoy/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/christinenicole-dt" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            </ul>
+
+            <li class="bar" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </nav>
+    </header>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'block';
+        }
+        
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+
+    <!-- Section 1: Pastel Green -->
+    <section class="pastel-green">
+        <div class="section-content">
+            <h2>Pastel Green Section</h2>
+            <p>This section has a soft pastel green background.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+        </div>
+    </section>
+
+    <!-- Section 2: Pastel Pink -->
+    <section class="pastel-pink">
+        <div class="section-content">
+            <h2>Pastel Pink Section</h2>
+            <p>This section features a gentle pastel pink background.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+        </div>
+    </section>
+
+    <!-- Section 3: Pastel Yellow -->
+    <section class="pastel-yellow">
+        <div class="section-content">
+            <h2>Pastel Yellow Section</h2>
+            <p>Enjoy the warm and inviting pastel yellow background.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+        </div>
+    </section>
+
+    <!-- Section 4: Pastel Blue -->
+    <section class="pastel-blue">
+        <div class="section-content">
+            <h2>Pastel Blue Section</h2>
+            <p>This section showcases a calm pastel blue background.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+        </div>
+    </section>
+
+    <!-- Section 5: Pastel Purple -->
+    <section class="pastel-purple">
+        <div class="section-content">
+            <h2>Pastel Purple Section</h2>
+            <p>A creative space with a soothing pastel purple background.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+        </div>
+    </section>
+
+</body>
+</html>
