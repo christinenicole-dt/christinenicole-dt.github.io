@@ -333,144 +333,176 @@ h6
   }
   
   /* Projects Section Styles */
-#projects {
-  background-color: #fffbdf;
-  padding: 50px;
-  margin-top: 80px;
-}
+  #projects {
+    padding: 50px;
+    margin-top: 20px;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+    color: #ff019e;
+  }
+  
+  /* Common styling for each project row */
+  .project {
+    margin-bottom: 60px;
+  }
+  
+  /* Thesis project section */
+  .project.thesis {
+    background-color: #fffbdf;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Project Info Row */
+  .project-info {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .project-info h3 {
+    font-size: 1.8rem;
+    color: #7319b4;
+    margin-bottom: 5px;
+  }
+  
+  .project-info span {
+    font-size: 1rem;
+    color: #2619b4;
+  }
+  
+  /* Project Description Row */
+  .project-description {
+    text-align: center;
+    padding: 10px 10px;
+    color: #333;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
 
-#projects h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-family: "Poppins", sans-serif;
-}
-
-/* Common styling for each project row */
-.project {
-  margin-bottom: 60px;
-}
-
-/* Thesis project specific styling */
-.project.thesis .project-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.project.thesis .project-info h3 {
-  margin: 0;
-  font-size: 1.8rem;
-  color: #7319b4;
-}
-
-.project.thesis .duration {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Container for thesis project screenshots */
-.project-screenshots {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Styling for the images (screenshots) */
-.project-screenshots img {
-  width: 300px; /* Adjust size as needed */
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-/* Styling for the headings in other project rows */
-.project h3 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  color: #7319b4;
-  margin-bottom: 20px;
-}
-
-.slider {
-  width: 800px;
-  max-width: 100vw;
-  height: 500px;
-  margin: auto;
-  position: relative;
-  overflow: hidden; /* Added to clip overflowing images */
-}
-
-.list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: flex;
-  width: max-content;
-  transition: 1s;
-}
-
-.list img {
-  width: 800px;
-  max-width: 100vw;
-  height: 500px;
-  object-fit: cover;
-}
-
-.buttons {
-  position: absolute;
-  top: 45%;
-  left: 3.5%;
-  width: 93%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.buttons button {
-  background-color: #FFEDB3;
-  color: #FF4E88;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  padding: 8px 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-}
-
-button:hover {
-  background-color: #7319b4; /* Light pink hover */
-  color: #A3D8FF;
-  transform: scale(1.05);
-}
-
-.dots {
-  position: absolute;
-  bottom: 10px;
-  color: #fd00c6;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.dots li {
-  list-style: none;
-  width: 10px;
-  height: 10px;
-  background-color: #fd00c6;
-  margin: 20px;
-  border-radius: 20px;
-  transition: 1s;
-}
-
-.dots li.active {
-  width: 30px;
-}
+  .project-description h4 {
+    font-size: 1.2rem;
+    color: #333;
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
+  
+  /* Slider Row */
+  .slider {
+    width: 800px;
+    max-width: 100vw;
+    height: 500px;
+    margin: 30px auto; /* Adds spacing above and below */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+  }
+  
+  .list img {
+    width: 800px;
+    max-width: 100vw;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 45%;
+    left: 3.5%;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons button {
+    background-color: #7319b4;
+    color: #fff9aa;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 8px 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #7319b4;
+    color: #A3D8FF;
+    transform: scale(1.05);
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #7319b4;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+  }
+  
+  .dots li.active {
+    width: 30px;
+  }
+  
+  /* Thesis Description Row */
+  .thesis-description {
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 10px;
+  }
+  
+  .thesis-description h5 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px; /* Adds spacing between h5 and h6 */
+  }
+  
+  .thesis-description h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7319b4;
+    display: inline-block;
+    margin-right: 10px; /* Adds spacing between h6 and the link */
+  }
+  
+  .thesis-description a {
+    font-size: 1rem;
+    color: #ff019e;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .thesis-description a:hover {
+    text-decoration: underline;
+  }
