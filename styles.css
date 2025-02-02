@@ -468,6 +468,7 @@ button:hover {
   background-color: #fd00c6;
   margin: 20px;
   border-radius: 20px;
+  transition: 1s;
 }
 
 .dots li.active {
