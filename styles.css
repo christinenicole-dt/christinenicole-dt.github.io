@@ -83,7 +83,7 @@ body{
   }
   
   /* Media query for screens 1012px and below */
-  @media (max-width: 1012px) {
+  @media (max-width: 1025px) {
     .nav_links {
       display: none;
       padding: 0px 45px;
@@ -242,90 +242,123 @@ h6
     color: #ff019e;
 }
 
+/* ========== SKILLS SECTION ========== */
 .skills-section {
-    background-image: url('images/banner.png');
-    background-size: 100% auto; 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    display: grid;
-    grid-template-rows: auto auto; 
-    justify-items: center; 
-    text-align: center;
-    gap: 20px; 
-    padding: 50px; 
+  background-image: url('images/banner.png');
+  background-size: cover; /* Make background fully cover the section */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 5vw;
 }
 
+/* Skills heading */
 .skills-section h4 {
-    text-align: center;
-    margin: 5px;
-    font-size: 3.5rem; 
-    color: hsl(241, 100%, 25%); 
+  font-size: 3vw;
+  color: hsl(241, 100%, 25%);
+  margin: 0;
 }
 
+/* Skill cells: Responsive grid */
 .skill-cells {
-    padding-top: 150px;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  padding-top: 5vw;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
 }
 
+/* Individual skill cell */
 .cell {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-    gap: 10px; 
-    width: 100px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: auto;
+  padding: 10px;
 }
 
+/* Skill images */
 .cell img {
-    width: 60px; 
-    height: auto; 
+  width: 50px;
+  height: auto;
+  max-width: 100%;
 }
 
+/* Skill name */
 .cell span {
-    font-family: "Poppins", serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: hsl(240, 20%, 25%);
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(240, 20%, 25%);
 }
 
+/* ========== ABOUT SECTION ========== */
 .about-section {
-    background-color: #fffbdf;
-    margin-top: 80px;
-    display: grid;
-    grid-template-rows: auto auto auto; 
-    justify-items: center; 
-    text-align: center;
-    gap: 20px; 
-    padding: 50px;
-  }
+  background-color: #fffbdf;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 5vw;
+}
 
-  .text {
-    grid-row: 1;
-  }
+/* Text container */
+.text {
+  max-width: 800px;
+}
 
-  .cards-row {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    width: 250px;
-  }
+/* Text heading */
+.text h5 {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
 
-  .card img {
-    width: 90%;
-    height: auto;
-  }
+/* Text description */
+.text h6 {
+  font-size: 1.5vw;
+  font-weight: normal;
+  max-width: 100%;
+}
+
+/* Cards row: Responsive layout */
+.cards-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Individual card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 200px;
+  padding: 10px;
+}
+
+/* Card images */
+.card img {
+  width: 80%;
+  height: auto;
+  max-width: 100%;
+}
+
   
   #projects {
     padding: 50px;
